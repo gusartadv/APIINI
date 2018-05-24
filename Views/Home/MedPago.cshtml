@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Medio Pago";
+}
+
+
+<div class="jumbotron">
+    <h2>Seleccione medio de pago</h2>
+
+   
+
+    @using (Html.BeginForm("Factura", "Home"))
+    {
+        <ul>
+            <li><input type="radio" name="radioMP" value="Debito"> Debito</li>
+            <li><input type="radio" name="radioMP" value="Credito"> Credito</li>
+        </ul>
+        <input type="submit" class="btn btn-primary" value="Aceptar" />
+    }
+
+
+
+</div>

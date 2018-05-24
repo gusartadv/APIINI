@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Compensar";
+
+}
+
+
+<div class="jumbotron">
+    <h2>Pagar</h2>
+
+    @using (Html.BeginForm("Pago", "Home"))
+    {
+        <label>Referencia factura</label>
+        <input type="text" class="form-control" name="numFactura" value="@ViewBag.factura"><p></p>
+        <div class="alert alert-info">Compensado Exitosamente</div><p></p>
+        
+
+
+        <input type="submit" class="btn btn-primary" value="Pagar" />
+    }
+</div>
